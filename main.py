@@ -25,6 +25,7 @@ caps["appium:connectHardwareKeyboard"] = True
 
 if __name__ == '__main__':
 
+
 #    def testMultiplyManyNumbers():
         # Conexao com o Salce Labs, aponta o DataCenter, meu usuário e chave
         driver = webdriver.Remote("https://up202101652:f4d70a49-450d-4300-9c67-7586816a1597@ondemand.eu-central-1.saucelabs.com:443/wd/hub", caps)
@@ -59,3 +60,4 @@ if __name__ == '__main__':
         print(f'resultado_final = {resultado_final.text} \n resultado_esperado = {resultado_esperado}')
         assert resultado_final.text == resultado_esperado
         driver.quit()
+
